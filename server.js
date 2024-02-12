@@ -1,9 +1,13 @@
-const express = require('express');
+const routes = require('./routes')
+const express = require('express')
 
-const app = express();
-const PORT = 3000;
+const app = express()
+const port = 3000
+routes(app)
 
-app.listen(PORT,()=> {
-    console.log('server running at http://127.0.0.1:'+PORT)
+app.listen(port,()=>{
+    console.log('running on server http://127.0.0.1:'+port)
 })
 
+
+module.exports = app

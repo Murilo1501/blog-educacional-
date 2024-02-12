@@ -30,9 +30,15 @@ class ComonController{
         }
     }
 
-    static async update(){
+    static async update(req,res){
         try{
+            const data = req.body;
+            const {id} = req.params;
+            const idObject = new ObjectId(id)
 
+            await ComonUserModel.update(data,idObject)
+
+            res.status(200).send('usuario alterado')
         }catch(err){
 
         }

@@ -18,8 +18,12 @@ class ComonUserModel{
         return users;
     }
 x
-    static async update(){
+    static async update(data,id){
 
+       console.log(data['name'])
+
+
+        await UserModel.updateOne({_id:id}, {$set:data});
     }
 
     static async delete(id){

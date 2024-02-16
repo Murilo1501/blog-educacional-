@@ -1,0 +1,16 @@
+// ----- default styles -----
+@import './global.scss';
+
+// ----- pages style - commom user -----
+@import './styles/commom user/homepage.scss';
+@import './styles/commom user/userProfile.scss';
+@import './styles/commom user/login.scss';
+@import './styles/commom user/signup.scss';
+@import './styles/commom user/aboutUs.scss';
+@import './styles/commom user/postPreview.scss';
+@import './styles/commom user/page404.scss';
+
+// ----- pages style - editor user -----
+
+
+// ----- pages style - admin user -----

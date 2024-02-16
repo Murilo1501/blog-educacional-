@@ -1,0 +1,77 @@
+// ----- fonts -----
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+
+// ----- archives required -----
+@import './color.scss';
+
+// ----- default styles -----
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 25px;
+}
+
+.title {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.text {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+// ----- components -----
+  // header
+  #headerComponent {
+    background-color: $black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & #headerComponent_leftContent,
+    & #headerComponent_rightContent {
+      height: auto;
+      width: auto;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  // navbar
+  #navbarComponent {
+    background-color: $primary;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    & #navbarComponent_link {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 12px;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+  }
